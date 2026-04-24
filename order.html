@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form - Yusuf Electronics Center</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Yusuf Electronics</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="order.html" class="active">Order</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="order-form">
+        <div class="container">
+            <h1>Place Your Order</h1>
+            <p style="text-align:center; margin-bottom:30px;">Fill in your details and contact us to complete your order.</p>
+            
+            <form id="orderForm">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required placeholder="Your full name">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="e.g., 0775123456">
+                </div>
+                <div class="form-group">
+                    <label for="product">Select Product *</label>
+                    <select id="product" name="product" required>
+                        <option value="">-- Choose a product --</option>
+                        <option value="Smartphone X200">Smartphone X200 - UGX 850,000</option>
+                        <option value="Smartphone Y20">Smartphone Y20 - UGX 720,000</option>
+                        <option value="ProBook 15 Laptop">ProBook 15 Laptop - UGX 2,200,000</option>
+                        <option value="UltraBook 14 Laptop">UltraBook 14 Laptop - UGX 3,500,000</option>
+                        <option value="BoomBox BT Speaker">BoomBox BT Speaker - UGX 180,000</option>
+                        <option value="BassPro Headphones">BassPro Headphones - UGX 250,000</option>
+                        <option value="Fast Charger 65W">Fast Charger 65W - UGX 80,000</option>
+                        <option value="USB Type-C Cable">USB Type-C Cable - UGX 25,000</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Quantity *</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Additional Message (optional)</label>
+                    <textarea id="message" name="message" placeholder="Any special requests..."></textarea>
+                </div>
+                <button type="submit" class="btn">Submit Order</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h2>Yusuf Electronics Center</h2>
+            <div class="footer-info">
+                <div>
+                    <h3>Location</h3>
+                    <p>Buwama Town</p>
+                </div>
+                <div>
+                    <h3>Email</h3>
+                    <p>buwamaelectronics.@gmail.ug.com</p>
+                </div>
+                <div>
+                    <h3>Contacts</h3>
+                    <p>0775060279 / 0741929024</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
